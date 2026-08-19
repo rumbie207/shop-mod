@@ -1,5 +1,5 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version '1.15'
+    id 'net.fabricmc.fabric-loom' version '1.7.4'
     id 'maven-publish'
 }
 
@@ -15,11 +15,12 @@ repositories {
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:26.1.2"
+    minecraft "com.mojang:minecraft:1.20.4"
+    mappings "net.fabricmc:yarn:1.20.4+build.3:v2"
 
-    modImplementation "net.fabricmc:fabric-loader:0.18.4"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.100.0+26.1.2"
+    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.97.0+1.20.4"
 
     // Bundles SGUI into your JAR
-    modImplementation include("eu.pb4:sgui:1.6.0+26.1.2")
+    modImplementation include("eu.pb4:sgui:1.2.2+1.20.4")
 }
