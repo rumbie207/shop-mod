@@ -1,5 +1,6 @@
 plugins {
     id 'net.fabricmc.fabric-loom' version '1.15'
+    id 'maven-publish'
 }
 
 version = '1.0.0'
@@ -7,14 +8,18 @@ group = 'com.example'
 
 repositories {
     mavenCentral()
-    maven { url = "https://maven.nucleoid.xyz/" }
+    maven {
+        name = "Nucleoid"
+        url = "https://maven.nucleoid.xyz/"
+    }
 }
 
 dependencies {
     minecraft "com.mojang:minecraft:26.1.2"
+
     modImplementation "net.fabricmc:fabric-loader:0.18.4"
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.100.0+26.1.2"
 
-    // Bundles SGUI inside your mod file automatically
+    // Bundles SGUI into your JAR
     modImplementation include("eu.pb4:sgui:1.6.0+26.1.2")
 }
