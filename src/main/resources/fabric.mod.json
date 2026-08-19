@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "shopmod",
+  "version": "1.0.0",
+  "name": "Shop Mod",
+  "entrypoints": {
+    "server": [
+      "com.example.shop.ShopMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "26.1.2"
+  }
+}
