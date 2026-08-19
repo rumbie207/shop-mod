@@ -1,15 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "shopmod",
+  "id": "shop",
   "version": "1.0.0",
   "name": "Shop Mod",
+  "description": "Custom GUI Shop Mod",
+  "authors": [
+    "rumbie207"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
   "entrypoints": {
     "server": [
       "com.example.shop.ShopMod"
     ]
   },
   "depends": {
-    "fabricloader": ">=0.18.4",
-    "minecraft": "26.1.2"
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
   }
 }
